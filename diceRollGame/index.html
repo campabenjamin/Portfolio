@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahtzee Dice Roller</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Yahtzee Dice Roller</h1>
+  <p>Roll five 6-sided dice for Yahtzee or any game that needs 5 dice.</p>
+
+  <p>Dice roll automatically when the page loads. Press Enter or click the button to roll again.</p>
+
+  <button id="rollBtn" autofocus>Roll 🎲</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Die</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody id="diceBody"></tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <td><input id="total" type="text" readonly></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p id="status"></p>
+
+  <script src="main.js"></script>
+</body>
+</html>

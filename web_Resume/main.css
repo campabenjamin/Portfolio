@@ -1,0 +1,55 @@
+:root {
+  --text: #111;
+  --muted: #444;
+  --accent: #0a66c2;
+  --border: #e6e6e6;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--text); line-height: 1.35; }
+
+.page {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 20px 40px;
+}
+
+.header { text-align: center; margin-bottom: 14px; }
+.name { font-size: 28px; margin: 0 0 4px; letter-spacing: .2px; }
+.contact { margin: 0; color: var(--muted); }
+.contact a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+.contact a:hover { border-bottom-color: currentColor; }
+
+.section { margin-top: 18px; }
+.section h2 { font-size: 16px; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 8px; color: var(--muted); }
+
+.two-col { display: block; }
+
+.list { list-style: none; padding: 0; margin: 0; }
+.label { font-weight: bold; }
+
+.item { margin: 12px 0; }
+.item-head { display: flex; justify-content: space-between; gap: 12px; }
+.item-head h3 { margin: 0; font-size: 15px; }
+.dates { white-space: nowrap; color: var(--muted); }
+.role { font-style: italic; margin: 2px 0 6px; }
+
+.bullets { margin: 0; padding-left: 18px; }
+.bullets li { margin: 4px 0; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  border-radius: 6px;
+}
+
+@media print {
+  @page { margin: 1in; }
+  body { color: #000; }
+  .btn, a[href]:after { display: none !important; }
+  .page { margin: 0; padding: 0; max-width: none; }
+}
