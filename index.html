@@ -6,15 +6,30 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Benjamin Campa</h1>
-  <p>Welcome to my portfolio hub. Select an assignment below.</p>
+  <header>
+    <h1>Benjamin Campa</h1>
+    <p>Software Engineering Portfolio</p>
+  </header>
 
-  <div class="button-container">
-    <button onclick="window.location.href='Portfolio/web_Resume/index.html'">Resume</button>
-    <button onclick="window.location.href='Portfolio/diceRollGame/index.html'">Dice Roller</button>
-    <button onclick="window.location.href='Portfolio/Sprint1/index.html'">Sprint 1</button>
-    <button onclick="window.location.href='Portfolio/Sprint2/index.html'">Sprint 2</button>
-    <button disabled>Future Assignments</button>
-  </div>
+  <main>
+    <section class="resume">
+      <h2>Resume</h2>
+      <a href="web_Resume/index.html" target="_blank" class="resume-btn">📄 View My Resume</a>
+    </section>
+
+    <section class="assignments">
+      <h2>Assignments</h2>
+      <ul>
+        <li><a href="Sprint1/index.html" target="_blank">👤 Sprint 1: About Me</a></li>
+        <li><a href="Sprint2/index.html" target="_blank">🐶 Sprint 2: Dogs API</a></li>
+        <li><a href="diceRollGame/index.html" target="_blank">🎲 Dice Roller</a></li>
+        <li><span class="coming-soon">⏳ Future Sprints: Coming Soon</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Benjamin Campa • Hosted on Azure</p>
+  </footer>
 </body>
 </html>
