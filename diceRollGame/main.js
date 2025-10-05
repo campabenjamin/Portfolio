@@ -1,3 +1,9 @@
+if (window.location.pathname.endsWith("/roll")) {
+  const result = Math.floor(Math.random() * 6) + 1;
+  const json = { result };
+  document.write(JSON.stringify(json));
+}
+
 const rollBtn = document.getElementById("rollBtn");
 const diceBody = document.getElementById("diceBody");
 const totalField = document.getElementById("total");
